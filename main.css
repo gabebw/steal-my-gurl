@@ -3,3 +3,9 @@ body {
   margin-left: 20%;
   margin-top: 1.5em;
 }
+
+#autoplay {
+  left: 10px;
+  position: absolute;
+  top: 20px;
+}
