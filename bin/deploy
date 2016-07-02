@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+scp -r index.html main.css i:/nginx-data/steal-my-gurl
