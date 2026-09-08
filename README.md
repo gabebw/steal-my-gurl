@@ -1,87 +1,19 @@
 # Everybody wanna steal my (g)url
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yfrLVHiZxfc" frameborder="0" allowfullscreen></iframe>
+This is deployed on at http://steal-my-gurl.gabebw.com
 
-    [Zayn Malik:]
-    She been my queen
-    Since we were sixteen
-    We want the same things,
-    We dream the same dreams,
-    Alright (alright)
+## Deployment
 
-    I got it all
-    'Cause she is the one
-    Her mom calls me 'love',
-    Her dad calls me 'son',
-    Alright (alright)
+It runs via nginx on
+[my Digital Ocean droplet](https://cloud.digitalocean.com/projects/72d7f367-f6a4-4a47-b7d0-2e5d1b27bc26/resources?i=b5b934).
 
-    [Niall Horan:]
-    I know, I know, I know for sure
+To deploy a new version, run:
 
-    [All x2:]
-    Everybody wanna steal my (g)url
-    Everybody wanna take her heart away
-    Couple billion in the whole wide world
-    Find another one 'cause she belongs to me
+    bin/deploy
 
-    Na na na na na na (oh, yeah)
-    Na na na na na na (alright)
-    Na na na na na na
-    Na na
+It assumes you have a setting for `i` in `~/.ssh/config`, like:
 
-    [Harry Styles:]
-    She belongs to me
-
-    [Liam Payne:]
-    Kisses like cream,
-    Her walk is so mean
-    And every jaw drop
-    When she's in those jeans,
-    Alright (alright)
-
-    [Louis Tomlinson:]
-    I don't exist
-    If I don't have her
-    The sun doesn't shine,
-    The world doesn't turn,
-    Alright (alright)
-
-    [Niall Horan:]
-    But I know, I know, I know for sure
-
-    [All x2:]
-    Everybody wanna steal my (g)url
-    Everybody wanna take her heart away
-    Couple billion in the whole wide world
-    Find another one 'cause she belongs to me
-
-    Na na na na na na (oh, yeah)
-    Na na na na na na (alright)
-    Na na na na na na
-    Na na na na na na
-
-    [Harry Styles:]
-    She knows, she knows
-    That I've never let her down before
-    She knows, she knows
-    That I'm never gonna let another take her love from me now
-
-    [All x2:]
-    Everybody wanna steal my (g)url
-    Everybody wanna take her heart away
-    Couple billion in the whole wide world
-    Find another one 'cause she belongs to me
-
-    Na na na na na na (oh, yeah, alright, yeah)
-    Na na na na na na (alright)
-    Na na na na na na
-    Na na
-
-    She belongs to me
-
-    Na na na na na na (oh, yeah)
-    (She belongs to me, yeah)
-    Na na na na na na (alright)
-    Na na na na na na
-
-    She belongs to me
+    Host i
+        HostName i.gabebw.com
+        Port 13425
+        User gabe
